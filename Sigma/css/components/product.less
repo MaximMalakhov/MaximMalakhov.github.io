@@ -1,0 +1,148 @@
+.product{
+	display: inline-block;
+	margin-bottom: 3.1em;
+	vertical-align: top;
+	margin-left: 2.25em;
+}
+
+@media screen and (min-width: 921px){
+	
+	.product{
+		width: 29.20%;
+	
+		&:nth-child(3n+1){
+			margin-left: 0;
+		}
+	}
+}
+
+@media screen and (max-width: 921px) and (min-width: 641px){
+	
+	.product{
+		width: 30%; 
+	
+		&:nth-child(3n+1){
+			margin-left: 0;
+		}
+	}
+}
+
+@media screen and (max-width: 640px){
+	
+	.product{
+		width: 43%; 
+	}
+}
+
+@media screen and (min-width: 481px){
+		
+	.product__stock, .product__leader{
+		right: 0;
+		width: 80px;
+		height: 80px;
+	}
+		
+	.product__stock{
+		.path("icons/icons.png");
+		background-position: 0 0;
+	}
+
+	.product__leader{
+		.path("icons/icons.png");
+		background-position: 80px 0;
+	}
+}
+
+@media screen and (max-width: 480px){
+	
+	.product{
+		width: 87%; 
+	}
+	
+	.product__description{
+		text-align: left;
+		font-size: 1.4rem;
+	}
+	
+	.product__stock{
+		right: 0;
+		width: 70px;
+		height: 70px;
+	}
+	
+	.product__leader{
+		right: -15px;
+		width: 70px;
+		height: 70px;
+	}
+	
+	.product__stock{
+		.path("icons/sticker-stock.png");
+	}
+
+	.product__leader{
+		.path("icons/sticker-leader.png");
+	}
+	
+	.product__link{
+		text-align: center;
+	}
+	
+	.product__preview {
+		display: inline-block;
+	}
+}
+
+.product__stock, .product__leader{
+	position: absolute;
+	top: 0;
+}
+	
+.product__img{
+	max-width: 100%;
+	height: auto;
+}
+
+.product__link{
+	display: block;
+	color: #003280;
+}
+
+.product__preview{
+	position: relative;
+	text-align: center;
+}
+
+.product__info{
+	margin-top: 11px;
+}
+
+.product__description{
+	text-decoration: underline;
+	margin-top: 12px;
+	line-height: 1.5rem;
+}
+
+.product__price, .product__add-basket{
+	display: inline-block;
+}
+
+.product__price{
+	float: left;
+	color: #fb9f18;
+	font-size: 1.8rem;
+	font-weight: bold;
+	margin-top: 6px;
+}
+
+.product__add-basket{
+	float: right;
+	.path("icons/icons.png");
+	background-position: 0 -97px;
+	width: 35px;
+	height: 27px;
+	
+	&:hover, &:focus{
+		opacity: 0.5;
+	}
+}

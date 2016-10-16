@@ -1,0 +1,88 @@
+.logo{
+	max-width: 100%;
+	height: auto;
+	
+}
+
+.font-large{
+	color: #fb9f18;
+}
+
+.contacts{	
+	width: 27%;
+	float: right;
+	margin-top: 5px;
+	text-align: right;
+}
+
+@media screen and (min-width: 921px){
+
+	.contacts{
+		margin-right: 8%;
+		font-size: 2rem;
+	}
+	
+	.font-large{
+		font-size: 4rem;
+	}
+	
+	.header__logo{
+		margin-top: 5px;
+		display: inline-block;
+	}
+}
+
+@media screen and (max-width: 920px){
+
+	.contacts{
+		margin-right: 2em;
+		font-size: 1.5rem;
+	}
+	
+	.font-large{
+		font-size: 3rem;
+	}
+}
+
+@media screen and (min-width: 641px){
+
+	.header__logo{
+		width: 32%;
+	}
+}
+
+@media screen and (max-width: 640px){
+
+	.contacts{
+		display: none;
+	}
+	
+	.header__logo{
+		width: 45%;
+		margin-top: 10px;
+		margin-bottom: 10px;
+		display: inline-block;
+	}
+}
+
+@media screen and (min-width: 481px){
+	.header__logo{
+		float: left;
+	}
+}
+
+@media screen and (max-width: 480px){
+
+	.header {
+		text-align: center;
+	}
+}
+
+.telephone, .address{
+	display: block;
+	color: #00378a;
+}
+
+.address{
+	margin-top: 10px;
+}
