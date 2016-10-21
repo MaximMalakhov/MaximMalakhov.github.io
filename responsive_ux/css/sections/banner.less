@@ -5,16 +5,28 @@
 	text-align: center;
 }
 
-.benner__img{
-	display: inline-block;
-	vertical-align: middle;
-}
-
 .benner__inscription{
 	font-size: 4.6rem;
 	font-style: italic;
-	width: 40%;
 	color: #fff;
-	display: inline-block;
-	vertical-align: middle;
+}
+
+@media screen and (min-width: 921px){
+
+	.benner__img, .benner__inscription{
+		display: inline-block;
+		vertical-align: middle;
+	}
+	
+	.benner__inscription{
+		width: 40%;
+	}
+}
+
+@media screen and (max-width: 920px){
+
+	.benner__inscription{
+		display: block;
+		width: 100%;
+	}
 }

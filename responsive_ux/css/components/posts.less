@@ -1,8 +1,11 @@
 .post{
 	vertical-align: top;
 }
+
 .post__img{
 	margin-bottom: 20px;
+	width: 100%;
+	height: auto;
 }
 
 .post__inner{
@@ -18,13 +21,6 @@
 .post__date{
 	width: 10%;
 	margin-top: 10px;
-}
-
-.post__content{
-	width: 85%;
-}
-
-.post__date{
 	text-align: center;
 }
 
@@ -43,10 +39,6 @@
 	padding-bottom: 0.5rem;
 }
 
-.post__content{
-	margin-left: 4%;
-}
-
 .post_addition .post__info{
 	margin-bottom: 15px;
 }
@@ -57,6 +49,10 @@
 
 .post__tags{
 	float: right;
+}
+
+.tags__content{
+	display: inline-block;
 }
 
 .post__icon{
@@ -84,12 +80,44 @@
 	padding-right: 1rem;
 }
 
-.post_addition{
-	width: 48%;
-	display: inline-block;
-	margin-top: 50px;
+
+@media screen and (min-width: 921px){
 	
-	&:nth-child(2n+3){
-		margin-left: 44px;;
+	.post_addition{
+		width: 48%;
+		display: inline-block;
+		margin-top: 50px;
+		
+		&:nth-child(2n+3){
+			margin-left: 3.5%;;
+		}
+	}
+	
+	
+	.post_addition .post__tags{
+		display: none;
+	}
+	
+	.post__content{
+		margin-left: 4%;
+	}
+			
+	.post__content{
+		width: 85%;
+	}
+}
+
+@media screen and (max-width: 920px){
+
+	.post{
+		margin-bottom: 20px;
+		
+		&:last-child{
+			margin-bottom: 0;
+		}
+	}
+	
+	.post__info, .post__date{
+		display: none;
 	}
 }

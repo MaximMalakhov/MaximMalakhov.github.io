@@ -1,12 +1,3 @@
-.progress-bars{
-	margin-left: 20px;
-	display: inline-block;
-}
-
-.about .progress-bars{
-	width: 53%;
-}
-
 .progress-bar{
 	margin-bottom: 30px;
 	
@@ -21,33 +12,43 @@
 	margin-bottom: 15px;
 }
 
-.progress-bar__value{
+.progress-bars__content{
+	width: 100%;
 	height: 25px;
 	background-color: #eee;
-	border-radius: 0 5px 5px 0;
-	width: 100%;
 }
 
-.progress-bar__value_blue span{
+.progress-bar__value, .progress-bars__content{
+	border-radius: 0 5px 5px 0;
+}
+
+.progress-bar__value{
 	height: 100%;
-	display: inline-block;
+}
+
+.progress-bar__value_blue{
     width: 90%;
 	background-color: #0091be;
-	border-radius: 0 5px 5px 0;
 }
 
-.progress-bar__value_green span{
-	height: 100%;
-	display: inline-block;
+.progress-bar__value_green{
     width: 85%;
 	background-color: #40c95d;
-	border-radius: 0 5px 5px 0;
 }
 
-.progress-bar__value_yellow span{
-	height: 100%;
-	display: inline-block;
+.progress-bar__value_yellow{
     width: 95%;
 	background-color: #d7d93f;
-	border-radius: 0 5px 5px 0;
+}
+
+@media screen and (min-width: 921px){
+
+	.about .progress-bars{
+		width: 52%;
+	}
+	
+	.progress-bars{
+		margin-left: 20px;
+		display: inline-block;
+	}
 }

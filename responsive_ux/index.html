@@ -7,35 +7,63 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<div class="header">
+	<header class="header">
 		<div class="main-container clearfix">
 			<h1 class="logo">Responsive UX
 			<span class="logo__inscription">template</span>
 			</h1>
 			<nav class="menu">
 				<ul class="menu-list">
-					<li class="menu-list__item"><a href="#" class="menu__link">About</a></li>
-					<li class="menu-list__item"><a href="#" class="menu__link">Projects</a></li>
-					<li class="menu-list__item"> <a href="#" class="menu__link">Blog</a></li>
-					<li class="menu-list__item"><a href="#" class="menu__link">Contacts</a></li>
+					<li class="menu-list__item"><a href="#about" class="link link_black">About</a></li>
+					<li class="menu-list__item"><a href="#project" class="link link_black">Projects</a></li>
+					<li class="menu-list__item"> <a href="#blog" class="link link_black">Blog</a></li>
+					<li class="menu-list__item"><a href="#map" class="link link_black">Contacts</a></li>
+				</ul>
+			</nav>
+			<nav class="menu-mobile">
+				<ul class="menu-mobile-list">
+					<li class="menu-mobile-list__item">
+						<a href="#about" class="link link_black">
+							<i class="icon menu-mobile__icon icon-about"></i>
+							<span class="menu-mobile__name">About</span>
+						</a>
+					</li>
+					<li class="menu-mobile-list__item">
+						<a href="#project" class="link link_black">
+							<i class="icon menu-mobile__icon icon-project"></i>
+							<span class="menu-mobile__name">Projects</span>
+						</a>
+					</li>
+					<li class="menu-mobile-list__item">
+						<a href="#blog" class="link link_black">
+							<i class="icon menu-mobile__icon icon-blog"></i>
+							<span class="menu-mobile__name">Blog</span>
+						</a>
+					</li>
+					<li class="menu-mobile-list__item">
+						<a href="#map" class="link link_black">
+							<i class="icon menu-mobile__icon icon-contacts"></i>
+							<span class="menu-mobile__name">Contacts</span>
+						</a>
+					</li>
 				</ul>
 			</nav>
 		</div>
-	</div>
+	</header>
 	<div class="banner">
 		<div class="main-container">
 			<img class="benner__img" src="images/html5.png"alt="HTML5">
 			<span class="benner__inscription">I've seen the FUTURE It's in my BROWSER</span>
 		</div>
 	</div >
-	<section class="about section">
+	<section id="about" class="about section">
 		<div class="main-container">
-			<h2 class="title title_border">About</h2>
+			<h2 class="title section__title">About</h2>
 			<div class="section__content">
 				<div class="about__info">
 					<p>
 						Responsive UX template-is the modern and responsive html a template. It was
-						developed by means of <a href="#">Responsive framework</a>. The template responds all the
+						developed by means of <a href="#" class="link">Responsive framework</a>. The template responds all the
 						modern of the requirement. In case of creation were used next technologies were
 						used: HTML5, CSS3. Also in it the responsive grid, css3 animation and many
 						other components are included. It is prepared documentation is qualitative,
@@ -45,23 +73,29 @@
 				<div class="progress-bars">
 					<div class="progress-bar">
 						<span class="progress-bar__name">Documentation</span>
-						<div class="progress-bar__value progress-bar__value_blue"><span></span></div>
+						<div class="progress-bars__content">
+							<div class="progress-bar__value progress-bar__value_blue"></div>
+						</div>
 					</div>
 					<div class="progress-bar">
 						<span class="progress-bar__name">Desing</span>
-						<div class="progress-bar__value progress-bar__value_green"><span></span></div>
+						<div class="progress-bars__content">
+							<div class="progress-bar__value progress-bar__value_green"></div>
+						</div>
 					</div>
 					<div class="progress-bar">
 						<span class="progress-bar__name">Mobile</span>
-						<div class="progress-bar__value progress-bar__value_yellow"><span></span></div>
+						<div class="progress-bars__content">
+							<div class="progress-bar__value progress-bar__value_yellow"></div>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
-	<section class="projects section">
+	<section id="project" class="projects section">
 		<div class="main-container">
-			<h2 class="title title_border">Projects</h2>
+			<h2 class="title section__title">Projects</h2>
 			<div class="section__content">
 				<a class="project">
 					<img class="project__img" src="images/image_1.jpg">
@@ -138,9 +172,9 @@
 			</div>
 		</div>
 	</section>
-	<section class="blog section">
+	<section id="blog" class="blog section">
 		<div class="main-container">
-			<h2 class="title title_border">Blog</h2>
+			<h2 class="title section__title">Blog</h2>
 			<div class="section__content">
 				<article class="post">
 					<img class="post__img" src="images/article-image_1.jpg" alt="Post-img">
@@ -166,9 +200,11 @@
 						<div class="post__tags">
 							<i class="post__icon icon-tag"></i>
 							<span class="post__label">Tags:</span>
-							<span class="post__tag">Open-Source</span>
-							<span class="post__tag">Jquery</span>
-							<span class="post__tag">Animation</span>
+							<div class="tags__content">
+								<span class="post__tag">Open-Source</span>
+								<span class="post__tag">Jquery</span>
+								<span class="post__tag">Animation</span>
+							</div>
 						</div>
 					</div>
 				</article>
@@ -179,13 +215,15 @@
 							<i class="post__icon icon-avatar"></i>
 							<span class="post__label">Stas Melnikov</span>
 						</div>
-						<div class="post__tags">
+						<div class="post__tags tags">
 							<i class="post__icon icon-tag"></i>
 							<span class="post__label">Tags:</span>
-							<span class="post__tag">Open-Source</span>
-							<span class="post__tag">Jquery</span>
-							<span class="post__tag">Front-end</span>
-							<span class="post__tag">CSS3</span>
+							<div class="tags__content">
+								<span class="post__tag">Open-Source</span>
+								<span class="post__tag">Jquery</span>
+								<span class="post__tag">Front-end</span>
+								<span class="post__tag">CSS3</span>
+							</div>
 						</div>
 					</div>
 					<h2 class="title title_small">Library-of-plugins is a collection of ready-made decisions for front-end development</h2>
@@ -211,11 +249,13 @@
 							<i class="post__icon icon-avatar"></i>
 							<span class="post__label">Stas Melnikov</span>
 						</div>
-						<div class="post__tags">
+						<div class="post__tags tags">
 							<i class="post__icon icon-tag"></i>
 							<span class="post__label">Tags:</span>
-							<span class="post__tag">Bootstrap</span>
-							<span class="post__tag">Material Design</span>
+							<div class="tags__content">
+								<span class="post__tag">Bootstrap</span>
+								<span class="post__tag">Material Design</span>
+							</div>
 						</div>
 					</div>
 					<h2 class="title title_small">Material design for Bootstrap 3</h2>
@@ -247,7 +287,7 @@
 				<span>© 2015 All right reserved</span>
 			</div>
 			<div class="developed">
-				<a href="#" class="developed__link">Developed by Stas Melnikov</a>
+				<a href="#" class="link developed__link">Developed by Stas Melnikov</a>
 			</div>
 		</div>
 	</footer>
