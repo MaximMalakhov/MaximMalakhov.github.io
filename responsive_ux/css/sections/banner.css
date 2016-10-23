@@ -1,6 +1,7 @@
 .banner {
   background-color: #0091be;
   padding-top: 50px;
+  padding-bottom: 50px;
   text-align: center;
 }
 .banner__inscription {
@@ -21,9 +22,9 @@
   .banner__inscription {
     width: 40%;
   }
-  .banner {
-    padding-bottom: 50px;
-  }
+  /*.banner{
+		padding-bottom: 50px;
+	}*/
 }
 @media screen and (max-width: 920px) {
   .banner__inscription {
@@ -32,7 +33,8 @@
   }
 }
 @media screen and (max-width: 640px) {
-  .banner {
-    height: 80vh;
+  .mobile-preview {
+    height: 100vh;
+    box-sizing: border-box;
   }
 }
