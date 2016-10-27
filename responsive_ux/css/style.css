@@ -125,7 +125,6 @@ p {
   min-width: 100%;
   background-color: #fff;
   padding-top: 1.5rem;
-  padding-bottom: 2rem;
   border-bottom: 5px solid #fad027;
 }
 .logo {
@@ -141,10 +140,14 @@ p {
     float: left;
     width: 170px;
   }
+  .header {
+    padding-bottom: 2rem;
+  }
 }
 @media screen and (max-width: 640px) {
   .header {
     text-align: center;
+    padding-bottom: 4.7rem;
   }
   .logo__inscription {
     display: block;
@@ -241,6 +244,16 @@ p {
     background-size: cover;
     width: 20px;
     height: 20px;
+    background-color: #fff;
+    border-radius: 50%;
+  }
+  .menu-mobile {
+    background-color: #fad027;
+    width: 100%;
+    position: fixed;
+    top: 60px;
+    right: 0px;
+    padding-top: 8px;
   }
   .icon-about {
     background-image: url("../images/icons/user.svg");
@@ -476,7 +489,7 @@ p {
     min-height: 100vh;
   }
   .banner__img {
-    height: 100px;
+    height: 200px;
   }
 }
 @media screen and (min-width: 921px) {
