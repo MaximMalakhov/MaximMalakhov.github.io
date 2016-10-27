@@ -433,7 +433,6 @@ p {
 */
 .banner {
   background-color: #0091be;
-  padding-top: 15rem;
   padding-bottom: 5rem;
   text-align: center;
 }
@@ -444,7 +443,6 @@ p {
 }
 .banner__img {
   max-width: 100%;
-  height: auto;
 }
 @media screen and (min-width: 921px) {
   .banner__img,
@@ -455,6 +453,9 @@ p {
   .banner__inscription {
     width: 40%;
   }
+  .banner__img {
+    height: auto;
+  }
 }
 @media screen and (max-width: 920px) {
   .banner__inscription {
@@ -463,10 +464,19 @@ p {
     margin-top: 30px;
   }
 }
+@media screen and (min-width: 641px) {
+  .banner {
+    padding-top: 15rem;
+  }
+}
 @media screen and (max-width: 640px) {
   .banner {
     box-sizing: border-box;
+    padding-top: 20rem;
     min-height: 100vh;
+  }
+  .banner__img {
+    height: 250px;
   }
 }
 @media screen and (min-width: 921px) {
