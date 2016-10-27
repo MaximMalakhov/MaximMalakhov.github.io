@@ -280,6 +280,7 @@ p {
   width: 100%;
   height: 25px;
   background-color: #eee;
+  overflow: hidden;
 }
 .progress-bar__value,
 .progress-bars__content {
@@ -287,6 +288,8 @@ p {
 }
 .progress-bar__value {
   height: 100%;
+  -webkit-animation: progress-bar__value 2s ease-in-out 1 normal;
+  animation: progress-bar__value 2s ease-in-out 1 normal;
 }
 .progress-bar__value_blue {
   width: 90%;
@@ -299,6 +302,26 @@ p {
 .progress-bar__value_yellow {
   width: 95%;
   background-color: #d7d93f;
+}
+@-webkit-keyframes progress-bar__value {
+  0% {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes progress-bar__value {
+  0% {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
 }
 @media screen and (min-width: 921px) {
   .about .progress-bars {
@@ -478,14 +501,14 @@ p {
 }
 @media screen and (min-width: 641px) {
   .banner {
-    padding-top: 15rem;
+    padding-top: 14rem;
     padding-bottom: 5rem;
   }
 }
 @media screen and (max-width: 640px) {
   .banner {
     box-sizing: border-box;
-    padding-top: 20rem;
+    padding-top: 19rem;
     padding-bottom: 3rem;
     min-height: 100vh;
   }
@@ -519,6 +542,7 @@ p {
 .project .project__inscription {
   top: 50%;
   left: 50%;
+  -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   position: absolute;
 }
