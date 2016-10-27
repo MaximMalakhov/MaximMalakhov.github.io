@@ -472,7 +472,7 @@ p {
 @media screen and (max-width: 640px) {
   .banner {
     box-sizing: border-box;
-    padding-top: 5rem;
+    padding-top: 35rem;
     min-height: 100vh;
   }
   .banner__img {
