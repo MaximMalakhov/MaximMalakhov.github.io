@@ -476,7 +476,7 @@ p {
     min-height: 100vh;
   }
   .banner__img {
-    height: 200px;
+    height: 100px;
   }
 }
 @media screen and (min-width: 921px) {
